@@ -5,12 +5,15 @@ body {
     margin: 0;
     background-color: #222831;
     color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 .logo{
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: #5cc2f2;
+    background-color: #3fc1c9;
 }
 .logo img{
     width: 10%;
@@ -19,9 +22,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    animation: startupPage 0.7s;
+    position: absolute;
+    width: 100%;
 }
 #blueText{
-    color: #5cc2f2;
+    color: #3fc1c9;
 }
 .leftMain{
     display: flex;
@@ -41,13 +47,17 @@ body {
     width: 50%;
     height: 35px;
     border-radius: 10px;
-    background-color: #5cc2f2;
+    background-color: #3fc1c9;
     font-family: "Roboto", serif;
     font-weight: 500;
     font-style: normal;
     font-size: 20px;
     color: #222831;
     transition: 0.3s ease;
+}
+.startBtn button a{
+    text-decoration: none;
+    color: #222831;
 }
 .startBtn button:hover{
     transform: scale(1.05);
@@ -56,6 +66,17 @@ body {
     width: 100%;
     animation: imgOpPulse 3s infinite;
 }
+.footerimg{
+    margin-top: 650px;
+}
+.footerimg img{
+    width: 100%;
+}
+
+
+
+
+
 @keyframes imgOpPulse{
     0%, 100%{
         opacity: 100%;
@@ -64,9 +85,17 @@ body {
         opacity: 50%;
     }
 }
-.footerimg{
-    margin-top: 50px;
-}
-.footerimg img{
-    width: 100%;
+
+@keyframes startupPage{
+    0%{
+        margin-top: 260px;
+        opacity: 0%;
+    }
+    20%{
+        opacity: 20%;
+    }
+    100%{
+        margin-top: 0;
+        opacity: 100%;
+    }
 }

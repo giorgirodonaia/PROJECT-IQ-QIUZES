@@ -1,0 +1,72 @@
+body {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0;
+    background-color: #222831;
+    color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #3fc1c9;
+}
+.logo img{
+    width: 10%;
+}
+.mainWrap{
+    margin-top: 120px;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox{
+    width: 700px;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease;
+}
+.mainbox:hover{
+    box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.5);
+}
+.beforeimg img{
+    width: 100px;
+}
+#blueText{
+    color: #3fc1c9;
+}
+.startBtn button{
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: #3fc1c9;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+.startBtn{
+    margin-top: 30px;
+}
+.startBtn button:hover{
+    transform: scale(1.05);
+}
+.startBtn button a{
+    text-decoration: none;
+    color: #222831;
+}
