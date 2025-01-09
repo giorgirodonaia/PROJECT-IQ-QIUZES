@@ -16,7 +16,7 @@ body {
     background-color: #3fc1c9;
 }
 .logo img{
-    width: 10%;
+    width: 200px;
 }
 .mainWrap{
     display: flex;

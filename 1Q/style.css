@@ -1,198 +1,184 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto, sans-serif;
-}
-
-body {
+body{
     background-color: #222831;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0;
 }
-
- img {
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #3fc1c9;
+}
+.logo img{
+    width: 200px;
+}
+.logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainWrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.mainbox{
     width: 45%;
-    height: 45%;
-    border: grey;
-    border: 1px solid rgba(128, 128, 128, 0.726);
-    border-radius: 2px;
-}
-
-.wrapp .question img{
-    width: 30%;
-    height: 40%;
-    border: none;
-    position: relative;
-    top: 30%;
-}
-
-.wrapp {
-    width: 50vw;
-    height: 60vh;
-    background: white;
-    margin: 10% auto;
+    height: 470px;
+    background-color: white;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px 0px grey;
 }
-
-.ans1, .ans2, .ans3, .ans4, .ans5, .ans6 {
-    display: inline-block;
-
+.upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70%;
+    
 }
-
-.ans1::after{
+.question {
+    width: 30%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.question img{
+    width: 100%;
+}
+.answers{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.line1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.line2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.answer{
+    width: 20%;
+    height: 70%;
+    border: solid 1px gray;
+    border-radius: 5px;
+}
+.answer img{
+    width: 100%;
+    height: 100%;
+    transition: 0.1s ease;
+}
+.answer img:hover{
+    transform: scale(0.9);
+}
+#ans1::after{
     content: '1';
     color: white;
-    width: 30px;
-    height: 20px;
+    width: 30%;
     background-color: #222831;
     display: inline-block;
     border-radius: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 40%;
     position: relative;
-    top: -85px;
-    left: -10px;
-
+    top: -115%;
+    left: -10%;
 }
-
-.ans2::after {
+#ans2::after{
     content: '2';
     color: white;
-    width: 30px;
-    height: 20px;
+    width: 30%;
     background-color: #222831;
     display: inline-block;
     border-radius: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 40%;
     position: relative;
-    top: -85px;
-    left: -10px;
+    top: -115%;
+    left: -10%;
 }
-
-.ans2::after {
+#ans3::after{
     content: '3';
     color: white;
-    width: 30px;
-    height: 20px;
+    width: 30%;
     background-color: #222831;
     display: inline-block;
     border-radius: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 40%;
     position: relative;
-    top: -85px;
-    left: -10px;
+    top: -115%;
+    left: -10%;
 }
-
-.ans3::after{
-    content: '3';
-    color: white;
-    width: 30px;
-    height: 20px;
-    background-color: #222831;
-    display: inline-block;
-    border-radius: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40%;
-    position: relative;
-    top: -85px;
-    left: -10px;
-}
-
-.ans4::after{
+#ans4::after{
     content: '4';
     color: white;
-    width: 30px;
-    height: 20px;
+    width: 30%;
     background-color: #222831;
     display: inline-block;
     border-radius: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 40%;
     position: relative;
-    top: -85px;
-    left: -10px;
+    top: -115%;
+    left: -10%;
 }
-
-.ans5::after{
+#ans5::after{
     content: '5';
     color: white;
-    width: 30px;
-    height: 20px;
+    width: 30%;
     background-color: #222831;
     display: inline-block;
     border-radius: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 40%;
     position: relative;
-    top: -85px;
-    left: -10px;
+    top: -115%;
+    left: -10%;
 }
-
-.ans6::after {
+#ans6::after{
     content: '6';
     color: white;
-    width: 30px;
-    height: 20px;
+    width: 30%;
     background-color: #222831;
     display: inline-block;
     border-radius: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 40%;
     position: relative;
-    top: -85px;
-    left: -10px;
+    top: -115%;
+    left: -10%;
 }
-
-
-
-.answers {
-    width: 10vw;
-    height: 10vh;
-    margin-bottom: 10rem;
+.lower{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 30%;
-    display: inline;
-    position: relative;
-    left: 35%;
-    bottom: 48%
-
-}
-
-
-.line1 {
-    margin-bottom: 5%; 
-}
-
-
-
-.foot {
-    width: 90%;
     height: 10%;
-    background-color: rgba(0, 0, 0, 0.11);
-    position: relative;
-    top: 10%;
-    right: 30%;
-    border-radius: 50px;
 }
-
+.foot{
+    margin-top: 60px;
+    width: 90%;
+    height: 100%;
+    background-color: #e3e3e3;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .score {
     background-color: black;
     width: 20%;
@@ -200,13 +186,98 @@ body {
     border-radius: 40px;
     margin: 20px  auto;
     position: relative;
-    top: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
 span{
     color: white;
+}
+.NBbtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.Nbutton{
+    border: none;
+    width: 30%;
+    height: 85%;
+    border-radius: 50px;
+    text-align: right;
+    font-size: 20px;
+    color: #374151;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    background-color: #e3e3e3;
+    transition: 0.2s ease;
+}
+.Bbutton{
+    font-size: 20px;
+    border: none;
+    width: 30%;
+    height: 85%;
+    border-radius: 50px;
+    text-align: left;
+    color: #374151;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    background-color: #e3e3e3;
+    transition: 0.2s ease;
+}
+.Bbutton:hover, .Nbutton:hover{
+    background-color: #f0f0f0;
+}
+.Bbutton i{
+    font-size: 50px;
+    color: #374151;
+}
+.Nbutton i{
+    font-size: 50px;
+    color: #374151;
+}
+
+
+@media (max-width: 1100px) {
+    .upper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .answers{
+        width: 70%;
+    }
+    .mainbox{
+        width: 85%;
+        height: 900px;
+    }
+  }
+@media (max-width: 950px) {
+    .answers{
+        width: 80%;
+    }
+}
+@media (max-width: 820px){
+    .mainbox{
+        width: 80%;
+        height: 900px;
+    }
+}
+@media (max-width: 790px) {
+    .answers{
+        width: 90%;
+    }
+    .mainbox{
+        width: 90%;
+        height: 910px;
+    }
+}
+@media (max-width:430px){
+    .mainbox{
+        width: 90%;
+    }
 }
