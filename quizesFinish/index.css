@@ -36,6 +36,21 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 100px;
+    animation: smoothAnimation 1s forwards;
+}
+
+@keyframes smoothAnimation {
+    0% {
+        transform: translate(0,0) scale(1);
+    }
+
+    50% {
+        transform: translate(50px, 50px) scale(1.2);
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1.0);
+    }
 }
 
 .main h1 {
